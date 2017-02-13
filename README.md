@@ -1,13 +1,13 @@
 ## The challenge?
 Create a simple weather app using Javascript/HTML/CSS that shows the current weather conditions in London, UK using the API at [Open Weather Map]
 
-Install:
+##Install:
 npm install
 
-Run: 
+##Run: 
 npm start
 
-WebBrowser:
+##WebBrowser:
 localhost:8000/?city=London
 localhost:8000/?city=Berlin
 localhost:8000/?city=Paris
