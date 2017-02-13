@@ -11,3 +11,6 @@ npm start
 localhost:8000/?city=London
 localhost:8000/?city=Berlin
 localhost:8000/?city=Paris
+
+#Image:
+(Forecast_OpenWeatherApp.png)
