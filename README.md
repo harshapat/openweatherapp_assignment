@@ -13,4 +13,4 @@ localhost:8000/?city=Berlin
 localhost:8000/?city=Paris
 
 #Image:
-(Forecast_OpenWeatherApp.png)
+![alt text](https://github.com/harshapat/openweatherapp_assignment/blob/master/Forecast_OpenWeatherApp.png "Screenshot")
