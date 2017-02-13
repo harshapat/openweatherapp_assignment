@@ -1,0 +1,157 @@
+// Colours
+$very-warm: #FF8500;
+$warm: #ffc600;
+$normal: #94AF10;
+$cold: #06799F;
+$very-cold: #233884;
+
+// Breakpoints
+$mobile-width: 500px;
+@mixin mobile {
+    @media (max-width: $mobile-width) {
+        @content;
+    }
+}
+
+// DOM Elements
+.weather-widget {
+    width: 100%;
+    color: white;
+    font-family: league-gothic, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    padding: 5% 10%;
+    
+    @include mobile {
+        padding: 2%;
+    }
+    
+    &.very-warm { background-color: $very-warm; }
+    &.warm { background-color: $warm; }
+    &.normal { background-color: $normal; }
+    &.cold { background-color: $cold; }
+    &.very-cold { background-color: $very-cold; }
+}
+
+.city {
+    font-size: 4em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 100%;
+    text-align: center;
+}
+
+.weather{
+    display: table;
+    height: 115px;
+    width: 100%;
+    text-align: center;
+    border-bottom: 2px solid white;
+    
+    @include mobile {
+        height: 350px;
+    }
+    
+     .wi {
+        display: table-cell;
+        vertical-align: middle;
+        font-size: 20em;
+         
+         @include mobile {
+            font-size: 15em;
+         }
+    }
+}
+
+.weather-li {
+    color: #fff;
+    background-color: #082a58;
+    border-color: #ff8500;
+}
+
+.weather-heading {
+    font-size: 1.0em;
+    color: #fff;
+    background-color: #21272b;
+    border-color: #237ab7;
+}
+
+.weather-grid-wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  grid-rows:100px (30px 60px);
+  grid-gap: 10px;
+  background-color: #06799f;
+  color: #444;
+}
+
+.weather-grid-wrapper-box {
+  width: 250px;
+  background-color: #274e79;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+  max-width: 56em;
+  margin: 0 auto 20px auto;
+}
+
+.weather-details {
+    overflow: hidden;
+    margin-top: 35px;
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    .temp {
+        font-size: 7.5em;
+        float: left;
+        width: 55%;
+        max-height: 200px;
+        
+        @include mobile {
+            font-size: 9em;
+        }
+        
+        .temp-number, .wi {
+            vertical-align: top;
+            line-height: 0.85em;
+        }
+        
+        .wi {
+            font-size: 1.5em;
+            line-height: 0.8em;
+        }
+    }
+
+    .humidity, .wind {
+        font-size: 5em;
+        
+        @include mobile {
+            font-size: 3em;
+        }
+        
+        .wi {
+            vertical-align: top;
+            width: 70px;
+            
+            @include mobile {
+                width: 40px;
+            }
+        }
+    }
+    
+    .humidity {
+        margin-bottom: 20px;
+    }
+    
+    .wind {
+        .wi {
+            font-size: 0.82em;
+        }
+        .vel {
+            font-size: 0.6em;
+        }
+    }
+}
