@@ -8,9 +8,9 @@ npm install
 npm start
 
 ##WebBrowser:
-localhost:8000/?city=London
-localhost:8000/?city=Berlin
-localhost:8000/?city=Paris
+#####localhost:8000/?city=London
+#####localhost:8000/?city=Berlin
+#####localhost:8000/?city=Paris
 
 #Image:
 ![alt text](https://github.com/harshapat/openweatherapp_assignment/blob/master/Forecast_OpenWeatherApp.png "Screenshot")
